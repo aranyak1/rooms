@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+#video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-auto-rows: 250px;
+  grid-gap: 5px;
+  align-content: center;
+  justify-content: center;
+  padding: 10px 10px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+main {
+  height: 94vh;
+  background-color: rgb(53, 53, 53);
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.video-sec {
+  height: 90%;
+}
+
+.button-sec {
+  display: flex;
+  background-color: rgb(73, 73, 73);
+  height: 10%;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer {
+  height: 6vh;
+}
+
+svg {
+  height: 28px;
+  width: 70px;
+}
+
+.icon {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: space-evenly;
+  transition: 0.5s;
+}
+
+.icon:hover {
+  transform: translateY(2px);
+}
+span {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+}
+
+.github-icon,
+.content_copy-icon {
+  fill: wheat;
+}
+
+.videocam-icon,
+.microphone-icon {
+  fill: greenyellow;
+}
+
+.microphone-slash-icon,
+.videocam_off-icon {
+  fill: rgb(156, 0, 0);
+}
+.leave-room-btn {
+  color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  background-color: rgb(124, 2, 2);
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 2rem;
+  box-decoration-break: clone;
+}
+
+.right-btns,
+.left-btns {
+  display: flex;
+  align-items: center;
+}
+
+.right-btns > * {
+  margin: 0px 1.5rem;
+}
+
+.left-btns {
+  margin: 0px 1.5rem;
+}
+
+.videocam-div {
+  padding: 0px 2.5rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p
+{
+  font-size: 1.4rem;
+  color: wheat;
+  margin-top: -2px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      const ROOM_ID = "<%= roomId %>";
+    </script>
+    <script defer src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>Rooms</title>
+  </head>
+  <body>
+    <main>
+      <section class="video-sec">
+        <div id="video-grid"></div>
+      </section>
+      <section class="button-sec">
+        <div class="left-btns">
+          <div id='audio-off' class='icon audio-handler'>
+            <svg class="microphone-slash-icon">
+              <use xlink:href="img/sprite.svg#icon-microphone-slash"></use></svg>
+              <span>Unmute</span>  
+          </div>
+          <div id='video-on'  class='icon videocam-handler'>
+            <svg class="videocam-icon">
+              <use xlink:href="img/sprite.svg#icon-videocam"></use></svg>
+              <span>Stop video</span>
+          </div>
+        </div>
+       <div class="right-btns">
+        <div class='icon copy-content-btn'>
+          <svg class="content_copy-icon">
+            <use xlink:href="img/sprite.svg#icon-content_copy"></use></svg>
+             <span>Copy Room Link</span>
+        </div>  
+        <a class='icon github-div' href="https://github.com/aranyak1" target="_blank">
+          <svg class="github-icon">
+            <use xlink:href="img/sprite.svg#icon-github"></use></svg>
+            <span>Github</span>
+          </a>
+        <div class='leave-room'>
+        <a class='leave-room-btn' href="#">Leave Room</a> 
+        </div>
+       </div>                
+      </section>
+    </main>
+    <footer><p>Made by Aranyak Panigrahi</p></footer>
+  </body>
+</html>
