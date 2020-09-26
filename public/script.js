@@ -9,7 +9,7 @@ const audioBtn = document.querySelector(".audio-handler");
 const myPeer = new Peer(undefined, {
   path: "/peerjs",
   host: "/",
-  port: "443",
+  port: "9000",
   proxied: true,
 });
 
