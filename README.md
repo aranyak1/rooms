@@ -2,7 +2,7 @@
 
 Live Demo : <a href="https://rooms123.herokuapp.com/" target="_blank">https://rooms123.herokuapp.com/</a>
 
-### Room is a video chat that allows you to join a room call with video and audio with the ability to show/hide your video mute/unmute your audio. 
+### Rooms is a video chat that allows you to join a room call with video and audio with the ability to show/hide your video mute/unmute your audio. 
 
 ---
 
